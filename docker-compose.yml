@@ -9,5 +9,6 @@ services:
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     volumes:
       - "./mysql/data:/var/lib/mysql"
+      - "./mysql/my.cnf:/etc/mysql/conf.d/my.cnf"
     ports:
       - "3306:3306"
